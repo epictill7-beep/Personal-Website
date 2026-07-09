@@ -15,14 +15,17 @@ h1{
     margin-bottom: 10px;
 }
 
+.h1A{
+    font-size: 300px;
+    text-align: center;
+    color:rgb(16, 27, 50);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
 button {
     color: rgb(6, 6, 0);
     transition: 0.25s;
-    &:hover,
-    &:focus {
-        border-color: var(--hover);
-        color: rgb(154, 130, 130);
-    }
     
     background: none;
     border: 2px solid;
@@ -30,6 +33,44 @@ button {
     line-height: 1;
     margin: 0.5em;
     padding: 1em 2em;
+
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    border-color: var(--hover);
+    color: rgb(154, 130, 130);
+}
+
+button.return{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    border: 2px solid rgb(115, 10, 21);
+    background-color: transparent;
+    background: none;
+    border-radius: 50%;
+    color: rgb(115, 10, 21);
+    font-size: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    padding: 0px;
+    margin: 0px;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.return:hover {
+    background-color: rgb(115, 10, 21);
+    color: rgb(154, 130, 130);
 }
 
 div.choices{
