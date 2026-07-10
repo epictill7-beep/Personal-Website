@@ -70,7 +70,7 @@ button.return{
 
 button.return:hover {
     background-color: rgb(115, 10, 21);
-    color: rgb(154, 130, 130);
+    color: #cac5c5;
 }
 
 div.choices{
