@@ -1,17 +1,50 @@
 body{
-    background-color: #cac5c5;
+    background-color: #231b13;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    cursor: url("images/match.png") 20 20, auto;
 }
+
+/*.matchLight {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background: radial-gradient(circle 180px at var(--x) var(--y),
+        rgba(255, 245, 200, 0.55) 0%,
+        rgba(255, 220, 120, 0.18) 40%,
+        rgba(0, 0, 0, 0.95) 100%
+    );
+}*/
+
+.matchLight {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: rgba(0,0,0,0.97);
+    z-index: 1000;
+
+    mask: radial-gradient(circle 180px at calc(var(--x) + 1px) calc(var(--y) - 20px),
+        transparent 0,
+        transparent 80px,
+        black 170px);
+
+    -webkit-mask: radial-gradient(circle 180px at calc(var(--x) + 1px) calc(var(--y) - 20px),
+        transparent 0,
+        transparent 80px,
+        black 170px);
+}
+
+
 
 h1{
     font-size: 300px;
     text-align: center;
-    color:rgb(16, 27, 50);
+    color:rgb(156, 155, 106);
     margin-bottom: 10px;
 }
 
@@ -66,6 +99,7 @@ button.return{
     margin: 0px;
 
     transition: background-color 0.3s, color 0.3s;
+    cursor: url("images/match.png") 20 20, auto;
 }
 
 button.return:hover {
